@@ -60,8 +60,8 @@
 
 (def the-map {:a 2})
  
-;;note the clojure.lang.KVReduce
-(defn ikv? [x] (instance? clojure.lang.KVReduce x))
+;;note the clojure.lang.IKVReduce
+(defn ikv? [x] (instance? clojure.lang.IKVReduce x))
 
 (let [cache (java.util.HashMap.)]
   (defn sat? [protocol x]
